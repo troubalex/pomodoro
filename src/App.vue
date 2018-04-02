@@ -6,6 +6,8 @@
 
 <script>
 import Timer from './components/Timer.vue'
+// eslint-disable-next-line
+import scss from './assets/scss/base.scss'
 
 export default {
   components: {
@@ -21,7 +23,11 @@ export default {
   display: flex;
   flex-direction: column;
   font-family: 'Open Sans', sans-serif;
-  height: 80vh;
-  margin-top: 2em;
+  height: 100vh;
+  justify-content: center;
+}
+h1 {
+  font-size: 1.2rem;
+  font-weight: 400;
 }
 </style>

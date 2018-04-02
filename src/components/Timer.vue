@@ -1,6 +1,5 @@
 <template>
   <div class="container">
-    <h1>🍅 Pomodoro Timer 🍅</h1>
     <div class="timer">{{ timer }}</div>
     <button v-on:click="startCounter">{{ buttonLabel }}</button>
   </div>
@@ -36,35 +35,21 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-  h1 {
-    font-size: 1.2rem;
-    font-weight: 400;
-  }
-  button {
-    background-color: white;
-    border-radius: 2px;
-    border: 1px solid tomato;
-    color: tomato;
-    cursor: pointer;
-    font-size: 1em;
-    padding: 0.5em 1em;
-    transition: all 300ms ease-in-out;
-  }
-  button:hover {
-    background-color: tomato;
-    box-shadow: 2px 2px 4px rgba(0,0,0,0.12);
-    color: white;
-  }
+<style scoped lang="scss">
   .container {
     align-items: center;
+    background-color: white;
+    border: 1px solid tomato;
+    border-radius: 3px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.12);
     display: flex;
     flex-direction: column;
+    padding: 1.5rem 2.5rem 2rem;
   }
   .timer {
     color: tomato;
     font-family: 'Bungee', cursive;
-    font-size: 6rem;
+    font-size: 12vw;
     font-weight: 700;
     letter-spacing: 0.05em;
     margin: 2rem 0;

@@ -1,0 +1,17 @@
+button {
+    background-color: white;
+    border-radius: 2px;
+    border: 1px solid tomato;
+    color: tomato;
+    cursor: pointer;
+    font-size: 1em;
+    min-width: 8em;
+    padding: 0.5em 1em;
+    transition: all 300ms ease-in-out;
+
+    &:hover {
+    background-color: tomato;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.12);
+    color: white;
+    }
+}
